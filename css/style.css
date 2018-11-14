@@ -1,0 +1,263 @@
+/*-- Universal Styles --*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #f4f2d5;
+  font-family: Merriweather;
+}
+
+.heading {
+  padding: 50px 0;
+  margin: 0;
+  font-family: Ubuntu;
+}
+
+.name {
+  font-family: Ubuntu;
+  color: #747b8c
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+
+
+/*--- Nav Styles ---*/
+
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav li {
+  background-color: rgba(238, 220, 198, 0.5);
+  font-size: 1.3em;
+  margin: 15px 0;
+  padding: 10px 0;
+}
+
+
+/*-- Profile Styles --*/
+
+.profile_pic {
+  width: 50%;
+  min-width: 200px;
+  max-width: 450px;
+  margin-top: 5px;
+}
+
+.tag {
+  margin: 10px 10px 80px 10px;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+
+/*-- Portfolio Styles --*/
+
+#portfolio {
+  background-color: rgba(238, 220, 198, 0.5);
+}
+
+.example img {
+  width: 90%;
+}
+
+.example p {
+  padding: 20px 20px 40px 20px;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.last p {
+  padding-bottom: 60px;
+}
+
+/*-- Skills Styles -- */
+
+#skills {
+  border-bottom: 2px solid #ccc;
+  width: 90%;
+  margin: auto;
+}
+
+.skill-list {
+  padding-bottom: 30px;
+}
+
+.skill-list li {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+/*-- Contact Styles --*/
+
+#contact p {
+  margin: 0 10px 10px 10px;
+}
+
+.contact-info li {
+  margin: 20px 0;
+}
+
+.contact-info span {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.copy {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  border-top: 2px solid #ccc;
+  font-size: 0.9em;
+}
+
+.copy h3 {
+  float: left;
+}
+
+.copy a {
+  margin: 19px 0;
+  float: right;
+}
+
+.footer-nav {
+  display: none;
+}
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+  nav li {
+    display: inline-block;
+    margin: 0 15px;
+    background-color: #f4f2d5;
+    font-size: 1.2em;
+  }
+
+  .profile_pic {
+    float: right;
+    width: 50%;
+    margin: 0;
+    padding: 50px 30px 70px 15px;
+  }
+
+  .tag {
+    float: left;
+    text-align: left;
+    font-size: 1.3em;
+    width: 50%;
+    margin: 0;
+    padding: 50px 0 0 30px;
+}
+
+  .example {
+    float: left;
+    max-width: 50%;
+  }
+
+  #contact p {
+    margin: 0 60px;
+    padding-bottom: 30px;
+  }
+
+  .phone {
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 1.2em;
+  }
+
+  .email {
+    margin: 0;
+    padding-bottom: 50px;
+    font-size: 1.2em;
+  }
+
+  .topbutton {
+    display: none;
+  }
+
+  .footer-nav {
+    display: inline-block;
+    float: right;
+    margin: 20px 0;
+  }
+
+  .footer-nav li,
+  .footer-nav li a {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-nav li {
+    margin: 0 10px;
+    font-size: .9em;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .wrapper {
+    padding: 30px;
+  }
+
+  .name {
+    float: left;
+    padding-left: 30px;
+  }
+
+  .main-nav nav {
+    float: right;
+    padding-right: 15px;
+  }
+
+  .main-nav li {
+    padding: 0;
+    margin-top: 25px;
+  }
+
+  .main-nav a {
+    vertical-align: bottom;
+  }
+
+  .example {
+    max-width: 33.33%;
+  }
+
+  .copy {
+    padding: 0;
+  }
+
+  .copy h3,
+  .footer-nav{
+    margin-top: 40px;
+  }
+}
